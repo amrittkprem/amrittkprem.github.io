@@ -122,6 +122,29 @@
         font-size: 2rem;
       }
     }
+    .card-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.project-link {
+  color: var(--accent);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
   </style>
 </head>
 
@@ -144,15 +167,21 @@
       <div class="projects">
         <div class="card">
           <h3>Log Analyzer</h3>
-          <p>
-            Python-based CLI tool to analyze Linux and web server logs,
-            detect brute-force attempts, and generate security summaries.
-          </p>
-          <a href="https://github.com/amrittkprem/log-analyzer/" target="_blank">View This Project on GitHub</a>
+       <div class="card-footer">
+  <div class="card-footer">
+  <a href="https://github.com/amrittkprem/log-analyzer/" target="_blank" class="project-link">
+    View Source Code
+  </a>
 
-          <span class="tag">Python</span>
-          <span class="tag">Security</span>
-          <span class="tag">CLI</span>
+  <div class="tags">
+    <span class="tag">Python</span>
+    <span class="tag">Security</span>
+    <span class="tag">CLI</span>
+  </div>
+</div>
+
+
+
         </div>
 
         <div class="card">
@@ -262,6 +291,7 @@
   </div>
 </body>
 </html>
+
 
 
 
