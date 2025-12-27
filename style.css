@@ -178,6 +178,10 @@
     color: var(--muted);
     font-size: 0.95rem;
   }
+.card p {
+  max-width: 40ch;
+}
+
   
   /* Tags */
   
@@ -459,4 +463,5 @@
  }
 
     
+
 
