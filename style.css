@@ -166,6 +166,8 @@
     padding: 22px;
     background: #ffffff;
   }
+
+
   
   .card h3 {
     font-size: 1.05rem;
@@ -224,6 +226,20 @@
   }
   
   /* ---------------- MOBILE ---------------- */
+@media (max-width: 640px) {
+  .projects {
+    gap: 28px;
+  }
+
+  .card {
+    padding: 24px;
+  }
+
+  .card h3 {
+    font-size: 1.1rem;
+  }
+}
+
   
   @media (max-width: 768px) {
     .hero {
@@ -399,4 +415,5 @@
     margin-bottom: 14px;
     text-align: center
  }
+
     
