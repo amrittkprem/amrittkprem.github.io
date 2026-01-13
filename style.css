@@ -41,11 +41,17 @@
   
   body {
     font-family: "JetBrains Mono", "IBM Plex Mono", "SF Mono", monospace;
+    font-size: 13px;
     background: var(--bg);
     color: var(--text);
-    line-height: 1.6;
+    line-height: 1.45;
+;
     
   }
+.container,
+.page {
+  max-width: 960px;
+}
   
   .container {
     max-width: 1000px;
@@ -463,6 +469,7 @@
  }
 
     
+
 
 
 
