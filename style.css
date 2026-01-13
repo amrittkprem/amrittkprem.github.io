@@ -423,6 +423,53 @@
   .projects {
     grid-template-columns: 1fr;
   }
+      @media (max-width: 600px) {
+  body {
+    font-size: 12.5px;
+    line-height: 1.45;
+  }
+}
+@media (max-width: 600px) {
+  .hero-left h1 {
+    font-size: 1.7rem;
+    letter-spacing: -0.03em;
+  }
+    
+@media (max-width: 600px) {
+  .card,
+  .skill-card,
+  .cert-item {
+    padding: 16px;
+  }
+
+  .card p,
+  .skill-card p,
+  .cert-item p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+}
+    @media (max-width: 600px) {
+  .name-chip.floating {
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+@media (max-width: 600px) {
+  .hero-right img {
+    max-width: 220px;
+  }
+}
+
+
+    
+
+  .hero-sub {
+    font-size: 0.9rem;
+  }
+}
+
 
   .card {
     padding: 22px 24px;
@@ -469,6 +516,7 @@
  }
 
     
+
 
 
 
