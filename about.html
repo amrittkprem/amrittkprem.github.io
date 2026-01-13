@@ -1,196 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About — Amrit K Prem</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amrit K Prem — About</title>
 
-    <!-- Your global nav styles -->
-    <link rel="stylesheet" href="css/style.css" />
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+body {
+    background: #0b0b0b;
+    color: #e6e6e6;
+    font-family: "JetBrains Mono", "IBM Plex Mono", "SF Mono", monospace;
+    font-size: 13px;
+    line-height: 1.35;
+    min-height: 100vh;
+}
 
-        a {
-            color: inherit;
-            text-decoration: none;
-        }
+/* Nav */
+nav {
+    padding: 24px 56px;
+    display: flex;
+    gap: 24px;
+    font-size: 13px;
+}
 
-        /* DO NOT FLEX THE BODY */
-        body {
-            font-family: "JetBrains Mono", "IBM Plex Mono", "SF Mono", monospace;
-            background: #ffffff;
-            color: #111111;
-            font-size: 14px;
-            line-height: 1.25;
-            min-height: 100vh;
-        }
+nav a {
+    color: #e6e6e6;
+    text-decoration: none;
+}
 
-        /* Center only the about content */
-        .page {
-            max-width: 820px;
-            margin: 0 auto;
-            padding: 32px 24px;
-        }
+nav a:hover {
+    opacity: 0.6;
+}
 
-        /* Header */
-        .header {
-            text-align: center;
-            font-size: 22px;
-            margin-bottom: 32px;
-        }
+/* Page container */
+.page {
+    padding: 24px 56px 56px 56px;
+    max-width: 1200px;
+}
 
-        /* Sections */
-        .section-row {
-            display: flex;
-            margin-bottom: 12px;
-        }
+/* Name */
+.header {
+    margin-bottom: 64px;
+}
 
-        .section-label {
-            flex: 0 0 140px;
-            text-transform: uppercase;
-            font-size: 0.85em;
-            color: #555;
-            letter-spacing: 0.06em;
-            padding-right: 16px;
-            text-align: right;
-        }
+.header .first {
+    font-size: 14px;
+    color: #9a9a9a;
+}
 
-        .section-content {
-            flex: 1;
-            white-space: pre-line;
-        }
+.header .last {
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+}
 
-        /* Contacts */
-        .contacts {
-            margin-top: 28px;
-            text-align: center;
-            font-size: 0.9em;
-        }
+/* Sections */
+.section {
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    column-gap: 32px;
+    margin-bottom: 28px;
+}
 
-        .contacts .section-label {
-            text-align: center;
-            margin-bottom: 4px;
-        }
+.section-label {
+    color: #7a7a7a;
+    text-transform: lowercase;
+}
 
-        /* Mobile */
-        @media (max-width: 768px) {
-            .section-row {
-                flex-direction: column;
-                margin-bottom: 10px;
-            }
+.section-content {
+    color: #e6e6e6;
+}
 
-            .section-label {
-                text-align: left;
-                padding-right: 0;
-                margin-bottom: 2px;
-            }
+/* Entry blocks */
+.entry {
+    margin-bottom: 14px;
+}
 
-            .contacts {
-                text-align: left;
-            }
-        }
-    </style>
+.entry-title {
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: #ffffff;
+}
+
+.entry-meta {
+    color: #9a9a9a;
+    font-size: 12px;
+}
+
+/* Contacts */
+.contacts {
+    position: absolute;
+    right: 56px;
+    bottom: 40px;
+}
+
+.contacts .section-label {
+    margin-bottom: 6px;
+}
+
+.contacts a {
+    color: #e6e6e6;
+    text-decoration: none;
+}
+
+.contacts a:hover {
+    opacity: 0.6;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    nav {
+        padding: 16px 24px;
+    }
+
+    .page {
+        padding: 24px;
+    }
+
+    .section {
+        grid-template-columns: 1fr;
+        row-gap: 6px;
+    }
+
+    .contacts {
+        position: static;
+        margin-top: 40px;
+    }
+}
+</style>
 </head>
 
 <body>
 
-    <!-- NAV: untouched, uses style.css -->
-    <nav class="top-nav">
-        <a href="index.html" class="nav-logo">home</a>
-        <div class="nav-links">
-            <a href="about.html">about</a>
-        </div>
-    </nav>
+<nav>
+    <a href="index.html">home</a>
+    <a href="about.html">about</a>
+</nav>
 
-    <!-- ABOUT losing the nav -->
-    <div class="page">
+<div class="page">
 
-        <div class="header">
-            Amrit<br>
-            K Prem
-        </div>
-
-        <div class="section-row">
-            <div class="section-label">Background</div>
-            <div class="section-content">
-High school student (Age 16) focused on cybersecurity, systems, and defensive security.
-Early exposure to digital systems and data collection, aligned with ethical,
-white-hat security. Emphasis on log analysis and network exposure.
-            </div>
-        </div>
-
-        <div class="section-row">
-            <div class="section-label">Experience</div>
-            <div class="section-content">
-Independent Cybersecurity Researcher
-Built and moderated a large hacking-focused community in 2023.
-Developed a Suspicious Log Analyzer (CLI) for brute-force detection.
-Linux-based workflows with Python, Nmap, and SQLMap.
-            </div>
-        </div>
-
-        <div class="section-row">
-            <div class="section-label">Certifications</div>
-            <div class="section-content">
-Cybersecurity Fundamentals — IBM
-FCF: Threat Landscape 3.0 — Fortinet
-Ethical Hacker Jr. — Red Team Hacker Academy
-            </div>
-        </div>
-
-        <div class="section-row">
-            <div class="section-label">Education</div>
-            <div class="section-content">
-High school student
-Self-directed cybersecurity study
-            </div>
-        </div>
-
-        <div class="section-row">
-            <div class="section-label">Skills</div>
-            <div class="section-content">
-Log analysis
-Blue-team thinking
-Linux systems
-Python scripting
-            </div>
-        </div>
-
-        <div class="section-row">
-            <div class="section-label">Tools</div>
-            <div class="section-content">
-Linux
-Python
-Nmap
-SQLMap
-            </div>
-        </div>
-
-        <div class="section-row">
-            <div class="section-label">Interests</div>
-            <div class="section-content">
-Security architecture
-Defensive systems
-Building real tools
-            </div>
-        </div>
-
-        <div class="contacts">
-            <div class="section-label">Contacts</div>
-            <div class="section-content">
-                amritkprem@gmail.com<br>
-                <a href="https://linkedin.com/in/amritkprem" target="_blank" rel="noopener noreferrer">
-                    linkedin.com/in/amritkprem
-                </a>
-            </div>
-        </div>
-
+    <div class="header">
+        <div class="first"></div>
+        <div class="last">Amrit K Prem</div>
     </div>
+
+    <div class="section">
+        <div class="section-label">experience</div>
+        <div class="section-content">
+            <div class="entry">
+                <div class="entry-title">Independent Cybersecurity Researcher</div>
+                High school student focused on defensive security, log analysis,
+                and ethical hacking. Built and moderated a large hacking community
+                in 2023. Developed a Suspicious Log Analyzer (CLI) for brute-force
+                detection and authentication log analysis. Comfortable with Linux,
+                Python, and security tooling.
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-label">education</div>
+        <div class="section-content">
+            High school student (Age 16)<br>
+            Self-directed focus on cybersecurity and systems
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-label">online courses</div>
+        <div class="section-content">
+            Cybersecurity Fundamentals — IBM<br>
+            FCF: Introduction to the Threat Landscape 3.0 — Fortinet<br>
+            Ethical Hacker Jr. — Red Team Hacker Academy
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-label">skills</div>
+        <div class="section-content">
+            Log analysis, threat detection, blue-team thinking,
+            web security fundamentals, Linux systems,
+            Python scripting, security architecture
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-label">tools</div>
+        <div class="section-content">
+            Linux, Python, CLI utilities, Nmap, SQLMap
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-label">interests</div>
+        <div class="section-content">
+            Security architecture, defensive systems,
+            building real security tools
+        </div>
+    </div>
+
+</div>
+
+<div class="contacts">
+    <div class="section-label">contacts</div>
+    <div class="section-content">
+        amritkprem@gmail.com<br>
+        <a href="https://linkedin.com/in/amritkprem" target="_blank" rel="noopener noreferrer">
+            linkedin.com/in/amritkprem
+        </a>
+    </div>
+</div>
 
 </body>
 </html>
