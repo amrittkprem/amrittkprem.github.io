@@ -40,7 +40,7 @@
   }
   
   body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-family: "JetBrains Mono", "IBM Plex Mono", "SF Mono", monospace;
     background: var(--bg);
     color: var(--text);
     line-height: 1.6;
@@ -463,5 +463,6 @@
  }
 
     
+
 
 
