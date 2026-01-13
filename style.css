@@ -17,10 +17,13 @@
 /* ---------------- BASE ---------------- */
 
 body {
- font-family: "JetBrains Mono", "IBM Plex Mono", "SF Mono", monospace;
+  font-family: "JetBrains Mono", "IBM Plex Mono", "SF Mono", monospace;
   background: var(--bg);
   color: var(--text);
   line-height: 1.6;
+  touch-action: pan-y pinch-zoom; /* Added: Controls touch zoom behavior */
+  max-width: 100%; /* Added: Prevents horizontal overflow */
+  overflow-x: hidden; /* Added: Hides any horizontal overflow */
 }
 
 /* ---------------- NAV ---------------- */
@@ -56,6 +59,7 @@ body {
   max-width: 1000px;
   margin: auto;
   padding: 60px 20px;
+  width: 100%; /* Added: Ensures container doesn't exceed viewport */
 }
 
 /* ---------------- HERO ---------------- */
@@ -310,6 +314,10 @@ footer a {
 /* ---------------- MOBILE ---------------- */
 
 @media (max-width: 768px) {
+  body {
+    touch-action: pan-y; /* Changed: Restricts to vertical panning only on mobile */
+  }
+  
   .hero {
     grid-template-columns: 1fr;
     gap: 40px;
@@ -331,6 +339,22 @@ footer a {
   .hero-left h1 {
     font-size: 2rem;
   }
+  
+  .container {
+    padding: 40px 20px; /* Added: Slightly reduced padding on mobile */
+  }
+  
+  /* Added: Prevent horizontal scrolling on all elements */
+  .top-nav,
+  .hero,
+  .projects,
+  .cert-list,
+  .skills-projects,
+  section,
+  footer {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
 }
 
 @media (max-width: 600px) {
@@ -341,6 +365,19 @@ footer a {
 
   .about-name {
     font-size: 1.8rem;
+  }
+  
+  /* Added: Ensure content fits within viewport */
+  .hero-left h1 {
+    font-size: 1.8rem;
+    word-wrap: break-word;
+  }
+  
+  .hero-sub,
+  .card p,
+  .cert-item p,
+  .skill-card p {
+    word-wrap: break-word;
   }
 }
 /* FORCE nav to behave the same everywhere */
@@ -353,17 +390,4 @@ footer a {
 
   display: flex;
   align-items: center;
-  justify-content: space-between;
-
-  text-align: left;
-}
-
-.top-nav > a {
-  margin-right: auto;
-}
-
-.nav-links {
-  margin-left: auto;
-  display: flex;
-  gap: 16px;
-}
+  justify-content: space-between
