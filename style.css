@@ -300,34 +300,26 @@ footer a {
 @media (max-width: 600px) {
 
   body {
-    font-size: 12.5px;
+    font-size: 13px;
     line-height: 1.45;
   }
 
   .container {
-    padding: 36px 16px;
+    padding: 32px 16px;
   }
 
+  /* HERO */
   .hero {
-    text-align: center;
-    gap: 40px;
-  }
-
-  .hero-left {
-    margin: 0 auto;
+    gap: 32px;
   }
 
   .hero-left h1 {
-    font-size: 1.7rem;
-    letter-spacing: -0.03em;
+    font-size: 1.9rem;
+    letter-spacing: -0.02em;
   }
 
   .hero-sub {
     font-size: 0.9rem;
-  }
-
-  .hero-actions {
-    justify-content: center;
   }
 
   .hero-right img {
@@ -336,58 +328,45 @@ footer a {
 
   .name-chip.floating {
     top: -12px;
-    left: 50%;
-    transform: translateX(-50%);
   }
 
-  section > h2 {
-    text-align: center;
+  /* SECTIONS */
+  section {
+    margin-bottom: 56px;
+  }
+
+  /* CARDS – THIS IS THE IMPORTANT PART */
+  .card,
+  .skill-card,
+  .cert-item {
+    padding: 14px 16px;
   }
 
   .projects,
   .skills-projects {
-    justify-items: center;
     gap: 14px;
-  }
-
-  .card,
-  .skill-card,
-  .cert-item {
-    padding: 14px;
-    border-radius: 10px;
-    width: 100%;
-    max-width: 420px;
-  }
-
-  .card h3,
-  .skill-card h3,
-  .cert-item h3 {
-    text-align: center;
   }
 
   .card p,
   .skill-card p,
   .cert-item p {
-    font-size: 0.88rem;
+    font-size: 0.9rem;
     line-height: 1.45;
-    text-align: left;
   }
 
-  .tags {
-    text-align: center;
-  }
-
+  /* TAGS */
   .tag {
     font-size: 0.7rem;
     padding: 3px 7px;
   }
 
+  /* ABOUT */
   .photo-wrap img {
     width: 150px;
     height: 150px;
   }
 
   .about-name {
-    font-size: 1.8rem;
+    font-size: 1.9rem;
   }
 }
