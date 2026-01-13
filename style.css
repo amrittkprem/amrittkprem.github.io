@@ -279,6 +279,56 @@
       grid-template-columns: 1fr;
       gap: 40px;
     }
+      @media (max-width: 600px) {
+  .hero {
+    text-align: center;
+  }
+
+  .hero-left {
+    margin: 0 auto;
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
+}
+@media (max-width: 600px) {
+  section > h2 {
+    text-align: center;
+  }
+}
+@media (max-width: 600px) {
+  .projects,
+  .skills-projects {
+    justify-items: center;
+  }
+
+  .card,
+  .skill-card,
+  .cert-item {
+    width: 100%;
+    max-width: 420px;
+  }
+}
+@media (max-width: 600px) {
+  .card h3,
+  .skill-card h3,
+  .cert-item h3 {
+    text-align: center;
+  }
+
+  .card p,
+  .skill-card p,
+  .cert-item p {
+    text-align: left;
+  }
+}
+@media (max-width: 600px) {
+  .tags {
+    text-align: center;
+  }
+}
+
   
     .hero-right {
       order: -1;
@@ -516,6 +566,7 @@
  }
 
     
+
 
 
 
