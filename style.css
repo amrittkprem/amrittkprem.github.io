@@ -1,218 +1,369 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Amrit K Prem | Cybersecurity</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+:root {
+  --bg: #0b0b0b;
+  --text: #e6e6e6;
+  --muted: #9ca3af;
+  --accent: #60a5fa;
+  --border: #262626;
+}
 
-</head>
+/* ---------------- RESET ---------------- */
 
-<body>
-  <nav class="top-nav">
-    <a href="index.html" class="nav-logo">home</a>
-    <div class="nav-links">
-      <a href="about2.html">About</a>
-    </div>
-  </nav>
-  
-  <div class="container">
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-    <!-- HERO -->
-    <header class="hero">
-      
+/* ---------------- BASE ---------------- */
 
-      <!-- LEFT: TEXT -->
-      <div class="hero-left">
-        <h1>
-          I build defensive security tools<br />
-          that focus on risk, change, and system behavior.
-        </h1>
+body {
+ font-family: "JetBrains Mono", "IBM Plex Mono", "SF Mono", monospace;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
 
-        <p class="hero-sub">
-          Cybersecurity student focused on defensive security, log analysis,
-          and architecture-minded problem solving.
-        </p>
+/* ---------------- NAV ---------------- */
 
-        <div class="hero-actions">
-          <a class="btn primary" href="assets/resume/Amrit_K_Prem_CV.pdf" target="_blank">CV</a>
-          <a class="btn secondary" href="https://www.linkedin.com/in/amritkprem" target="_blank">LinkedIn</a>
-          <a class="icon-link" href="https://github.com/amrittkprem" target="_blank">GitHub</a>
-        </div>
-      </div>
+.top-nav {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 24px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-      <!-- RIGHT: ILLUSTRATION + NAME -->
-      <div class="hero-right">
-        <span class="name-chip floating">Amrit K Prem 👋</span>
-        <img src="assets/images/dawg.png" alt="Illustration">
-      </div>
+.nav-logo {
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--text);
+}
 
-    </header>
+.nav-links a {
+  text-decoration: none;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
 
-    <!-- PROJECTS -->
-    <section>
-      <h2>Projects</h2>
+.nav-links a:hover {
+  color: var(--text);
+}
 
-      <div class="projects">
+/* ---------------- CONTAINER ---------------- */
 
-        <div class="card">
-          <h3>Suspicious Log Analyzer</h3>
-          <p>
-            CLI-based tool that analyzes authentication logs to detect brute-force
-            behavior and highlight weaknesses in access control.
-          </p>
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 60px 20px;
+}
 
-          <div class="tags">
-            <span class="tag">Python</span>
-            <span class="tag">Security</span>
-            <span class="tag">CLI</span>
-          </div>
+/* ---------------- HERO ---------------- */
 
-          <a class="project-link" href="https://github.com/amrittkprem/log-analyzer" target="_blank">
-            View on GitHub →
-          </a>
-        </div>
+.hero {
+  display: grid;
+  grid-template-columns: 7fr 7fr;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 100px;
+}
 
-        <div class="card">
-          <h3>Cybersecurity Learning Platform</h3>
-          <p>
-            Early-stage educational platform focused on teaching cybersecurity
-            concepts with practical explanations and structured content.
-          </p>
+.hero-left {
+  max-width: 560px;
+}
 
-          <div class="tags">
-            <span class="tag">Web</span>
-            <span class="tag">EdTech</span>
-          </div>
-        </div>
+.hero-left h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  max-width: 520px;
+}
 
-        <div class="card">
-          <h3>Graphic Design & Video Edits</h3>
-          <p>
-            Posters, thumbnails, and short-form edits created using
-            mobile-first workflows for real-world use.
-          </p>
+.hero-sub {
+  color: var(--muted);
+  margin-bottom: 28px;
+}
 
-          <div class="tags">
-            <span class="tag">Design</span>
-            <span class="tag">Editing</span>
-          </div>
-        </div>
+.hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
 
-      </div>
-    </section>
-    <section>
-  <h2>Certifications</h2>
+.hero-right {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
 
-  <div class="cert-list">
-    <div class="cert-item">
-      <h3>Cybersecurity Fundamentals</h3>
-      <p>IBM · Core security concepts, threats, and defenses</p>
-    </div>
+.hero-right img {
+  max-width: 660px;
+}
 
-    <div class="cert-item">
-      <h3>FCF: Introduction to the Threat Landscape 3.0</h3>
-      <p>Fortinet · Modern threats and attack surfaces</p>
-    </div>
+/* ---------------- NAME CHIP ---------------- */
 
-    <div class="cert-item">
-      <h3>Ethical Hacker Jr.</h3>
-      <p>Red Team Hacker Academy · Ethical hacking fundamentals</p>
-    </div>
-  </div>
-</section>
+.name-chip,
+.name-chip-floating {
+  display: inline-block;
+  padding: 8px 18px;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  background: #111111;
+  color: var(--text);
+  border: 1px solid var(--border);
+}
 
+.name-chip.floating {
+  position: absolute;
+  top: -16px;
+  left: 20px;
+  z-index: 2;
+  animation: floaty 3.8s ease-in-out infinite;
+}
 
-    <!-- SECURITY THINKING -->
-    <section>
-      <h2>Security Architecture & Thinking</h2>
+@keyframes floaty {
+  0% { transform: translate(0,0); }
+  25% { transform: translate(6px,-4px); }
+  50% { transform: translate(-4px,6px); }
+  75% { transform: translate(4px,2px); }
+  100% { transform: translate(0,0); }
+}
 
-      <div class="projects">
-        <div class="card">
-          <h3>Attack Surface Change Detector (Planned)</h3>
-          <p>
-            Defensive security tool designed to track changes in exposed services
-            over time and highlight risk increases caused by configuration drift.
-          </p>
+/* ---------------- BUTTONS ---------------- */
 
-          <div class="tags">
-            <span class="tag">Architecture</span>
-            <span class="tag">Risk</span>
-            <span class="tag">Blue Team</span>
-          </div>
-        </div>
-      </div>
-    </section>
+.btn,
+.icon-link {
+  padding: 10px 18px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9rem;
+  background: #111111;
+  color: var(--text);
+  border: 1px solid var(--border);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
 
-    <!-- SKILLS -->
-    <section>
-      <h2>Skills & Tools</h2>
-    
-      <div class="skills-projects">
-    
-        <div class="skill-card">
-          <h3>Kali Linux & CLI</h3>
-          <p>
-            Comfortable working in Kali Linux environments using the command
-            line for security testing and tool execution.
-          </p>
-        </div>
-    
-        <div class="skill-card">
-          <h3>Nmap</h3>
-          <p>
-            Used for network scanning, port discovery, and reconnaissance
-            to identify exposed services.
-          </p>
-        </div>
-    
-        <div class="skill-card">
-          <h3>SQLMap</h3>
-          <p>
-            Hands-on experience testing for SQL injection vulnerabilities
-            and understanding database exploitation concepts.
-          </p>
-        </div>
-    
-        <div class="skill-card">
-          <h3>Network Attacks</h3>
-          <p>
-            Hands-on experience testing for Wifi Attack
-            and understanding diffrent methods of exploitation.
-          </p>
-        </div>
-    
-        <div class="skill-card">
-          <h3>Network Exposure</h3>
-          <p>
-            Understanding exposed services, ports, and configuration risks
-            from a defensive security perspective.
-          </p>
-        </div>
-    
-        <div class="skill-card">
-          <h3>Wireshark</h3>
-          <p>
-            Packet Capturing And Analysis.
-          </p>
-        </div>
-    
-      </div>
-    </section>
-    
+.btn:hover,
+.icon-link:hover {
+  opacity: 0.85;
+}
 
-    <!-- FOOTER -->
-    <footer>
-      <p>
-        amritkprem55@gmail.com ·
-        <a1 href="https://www.linkedin.com/in/amritkprem" target="_blank">LinkedIn</a>
-      </p>
-      <p>© 2025 Amrit K Prem</p>
-    </footer>
+/* ---------------- SECTIONS ---------------- */
 
-  </div>
-</body>
-</html>
+section {
+  margin-bottom: 80px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 24px;
+}
+
+/* ---------------- PROJECTS / CARDS ---------------- */
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px; /* This gives spacing between project cards */
+}
+
+.card,
+.cert-item,
+.skill-card {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 22px;
+  background: #111111;
+}
+
+.card h3,
+.cert-item h3,
+.skill-card h3 {
+  font-size: 1.05rem;
+  margin-bottom: 10px;
+}
+
+.card p,
+.cert-item p,
+.skill-card p {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+/* ---------------- TAGS ---------------- */
+
+.tags {
+  margin-top: 12px;
+}
+
+.tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  padding: 4px 8px;
+  border-radius: 999px;
+  background: rgba(96, 165, 250, 0.12);
+  color: var(--accent);
+  margin-right: 6px;
+}
+
+/* ---------------- LINKS ---------------- */
+
+.project-link {
+  display: inline-block;
+  margin-top: 12px;
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+/* ---------------- FOOTER ---------------- */
+
+footer {
+  border-top: 1px solid var(--border);
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+footer p {
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+footer a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+/* ---------------- ABOUT PAGE ---------------- */
+
+.about-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 90px 0 80px;
+}
+
+.photo-wrap {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 24px;
+}
+
+.photo-wrap img {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--border);
+  background: #111111;
+}
+
+.about-name {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.about-sub {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.about-content {
+  max-width: 720px;
+  margin: 0 auto;
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+.about-content section {
+  margin-bottom: 60px;
+}
+
+.about-content p {
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+/* ---------------- ADDED: Certificate and Skills Layout Spacing ---------------- */
+
+.cert-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px; /* Added: Creates consistent spacing between certificate cards */
+}
+
+.skills-projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px; /* Added: Creates consistent spacing between skill/tool cards */
+}
+
+/* ---------------- MOBILE ---------------- */
+
+@media (max-width: 768px) {
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .hero-right {
+    order: -1;
+  }
+
+  .hero-right img {
+    max-width: 260px;
+  }
+
+  .name-chip.floating {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .hero-left h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .photo-wrap img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .about-name {
+    font-size: 1.8rem;
+  }
+}
+/* FORCE nav to behave the same everywhere */
+
+.top-nav {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 24px 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  text-align: left;
+}
+
+.top-nav > a {
+  margin-right: auto;
+}
+
+.nav-links {
+  margin-left: auto;
+  display: flex;
+  gap: 16px;
+}
