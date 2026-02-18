@@ -1,227 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<link rel="stylesheet" href="css/style.css" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Amrit K Prem — About</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amrit K Prem — About</title>
 
-<style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background: #0b0b0b;
-    color: #e6e6e6;
-    font-family: "JetBrains Mono", "IBM Plex Mono", "SF Mono", monospace;
-    font-size: 13px;
-    line-height: 1.35;
-    min-height: 100vh;
-}
-
-/* Nav */
-nav {
-    padding: 24px 56px;
-    display: flex;
-    gap: 24px;
-    font-size: 13px;
-}
-
-nav a {
-    color: #e6e6e6;
-    text-decoration: none;
-}
-
-nav a:hover {
-    opacity: 0.6;
-}
-
-/* Page container */
-.page {
-    padding: 24px 56px 56px 56px;
-    max-width: 1200px;
-}
-
-/* Name */
-.header {
-    margin-bottom: 64px;
-}
-
-.header .first {
-    font-size: 14px;
-    color: #9a9a9a;
-}
-
-.header .last {
-    font-size: 18px;
-    font-weight: 600;
-    color: #ffffff;
-}
-
-/* Sections */
-.section {
-    display: grid;
-    grid-template-columns: 140px 1fr;
-    column-gap: 32px;
-    margin-bottom: 28px;
-}
-
-.section-label {
-    color: #7a7a7a;
-    text-transform: lowercase;
-}
-
-.section-content {
-    color: #e6e6e6;
-}
-
-/* Entry blocks */
-.entry {
-    margin-bottom: 14px;
-}
-
-.entry-title {
-    font-weight: 600;
-    margin-bottom: 4px;
-    color: #ffffff;
-}
-
-.entry-meta {
-    color: #9a9a9a;
-    font-size: 12px;
-}
-
-/* Contacts */
-.contacts {
-    position: absolute;
-    right: 56px;
-    bottom: 40px;
-}
-
-.contacts .section-label {
-    margin-bottom: 6px;
-}
-
-.contacts a {
-    color: #e6e6e6;
-    text-decoration: none;
-}
-
-.contacts a:hover {
-    opacity: 0.6;
-}
-
-/* Mobile */
-@media (max-width: 768px) {
-    nav {
-        padding: 16px 24px;
+  <style>
+    /* About‑page specific layout (compact, resume‑style) */
+    body {
+      font-size: 13px;
+      line-height: 1.35;
     }
 
     .page {
-        padding: 24px;
+      padding: 24px 56px 56px 56px;
+      max-width: 1200px;
+    }
+
+    .header {
+      margin-bottom: 64px;
+    }
+
+    .header .last {
+      font-size: 18px;
+      font-weight: 600;
+      color: #ffffff;
     }
 
     .section {
-        grid-template-columns: 1fr;
-        row-gap: 6px;
+      display: grid;
+      grid-template-columns: 140px 1fr;
+      column-gap: 32px;
+      margin-bottom: 28px;
     }
 
-    .contacts {
-        position: static;
-        margin-top: 40px;
+    .section-label {
+      color: #7a7a7a;
+      text-transform: lowercase;
     }
-}
-</style>
+
+    .section-content {
+      color: #e6e6e6;
+    }
+
+    .entry {
+      margin-bottom: 14px;
+    }
+
+    .entry-title {
+      font-weight: 600;
+      margin-bottom: 4px;
+      color: #ffffff;
+    }
+
+    .entry-meta {
+      color: #9a9a9a;
+      font-size: 12px;
+    }
+
+    @media (max-width: 768px) {
+      .page {
+        padding: 24px;
+      }
+
+      .section {
+        grid-template-columns: 1fr;
+        row-gap: 6px;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-<nav>
-    <a href="index.html">home</a>
-    <a href="about.html">about</a>
-</nav>
+  <!-- Navigation – now matches index (home left, about right) -->
+  <nav class="top-nav">
+    <a href="index.html" class="nav-logo">home</a>
+    <div class="nav-links">
+      <a href="about.html">About</a>
+    </div>
+  </nav>
 
-
-<div class="page">
+  <div class="page">
 
     <div class="header">
-        <div class="first"></div>
-        <div class="last">Amrit K Prem</div>
+      <!-- .first was empty, removed to keep markup clean -->
+      <div class="last">Amrit K Prem</div>
     </div>
 
     <div class="section">
-        <div class="section-label">experience</div>
-        <div class="section-content">
-            <div class="entry">
-                <div class="entry-title">Cybersecurity Student</div>
-                High school student focused on defensive security, log analysis,
-                and ethical hacking. Built and moderated a large hacking community
-                in 2023. Developed a Suspicious Log Analyzer (CLI) for brute-force
-                detection and authentication log analysis. Comfortable with Linux,
-                Python, and security tooling.
-            </div>
+      <div class="section-label">experience</div>
+      <div class="section-content">
+        <div class="entry">
+          <div class="entry-title">Cybersecurity Student</div>
+          High school student focused on defensive security, log analysis,
+          and ethical hacking. Built and moderated a large hacking community
+          in 2023. Developed a Suspicious Log Analyzer (CLI) for brute-force
+          detection and authentication log analysis. Comfortable with Linux,
+          Python, and security tooling.
         </div>
+      </div>
     </div>
 
     <div class="section">
-        <div class="section-label">education</div>
-        <div class="section-content">
-            High school student (Age 16)<br>
-            Self-directed focus on cybersecurity and systems
-        </div>
+      <div class="section-label">education</div>
+      <div class="section-content">
+        High school student (Age 16)<br>
+        Self-directed focus on cybersecurity and systems
+      </div>
     </div>
 
     <div class="section">
-        <div class="section-label">online courses</div>
-        <div class="section-content">
-            Cybersecurity Fundamentals — IBM<br>
-            FCF: Introduction to the Threat Landscape 3.0 — Fortinet<br>
-            Ethical Hacker Jr. — Red Team Hacker Academy
-        </div>
+      <div class="section-label">online courses</div>
+      <div class="section-content">
+        Cybersecurity Fundamentals — IBM<br>
+        FCF: Introduction to the Threat Landscape 3.0 — Fortinet<br>
+        Ethical Hacker Jr. — Red Team Hacker Academy
+      </div>
     </div>
 
     <div class="section">
-        <div class="section-label">skills</div>
-        <div class="section-content">
-            Log analysis, threat detection, blue-team thinking,
-            web security fundamentals, Linux systems,
-            Python scripting, security architecture
-        </div>
+      <div class="section-label">skills</div>
+      <div class="section-content">
+        Log analysis, threat detection, blue-team thinking,
+        web security fundamentals, Linux systems,
+        Python scripting, security architecture
+      </div>
     </div>
 
     <div class="section">
-        <div class="section-label">tools</div>
-        <div class="section-content">
-            Linux, Python, CLI utilities, Nmap, SQLMap
-        </div>
+      <div class="section-label">tools</div>
+      <div class="section-content">
+        Linux, Python, CLI utilities, Nmap, SQLMap
+      </div>
     </div>
 
     <div class="section">
-        <div class="section-label">interests</div>
-        <div class="section-content">
-            Security architecture, defensive systems,
-            building real security tools
-        </div>
+      <div class="section-label">interests</div>
+      <div class="section-content">
+        Security architecture, defensive systems,
+        building real security tools
+      </div>
     </div>
 
-</div>
+    <!-- Footer – now consistent with index, replacing absolute contacts -->
+    <footer>
+      <p>
+        amritkprem@gmail.com ·
+        <a href="https://linkedin.com/in/amritkprem" target="_blank">LinkedIn</a>
+      </p>
+      <p>© 2025 Amrit K Prem</p>
+    </footer>
 
-<div class="contacts">
-    <div class="section-label">contacts</div>
-    <div class="section-content">
-        amritkprem@gmail.com<br>
-        <a href="https://linkedin.com/in/amritkprem" target="_blank" rel="noopener noreferrer">
-            linkedin.com/in/amritkprem
-        </a>
-    </div>
-</div>
+  </div> <!-- .page -->
 
 </body>
 </html>
-
-
-
-
