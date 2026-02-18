@@ -4,10 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Design Gallery | Amrit K Prem</title>
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- No Google Fonts needed – using system monospace stack -->
   <style>
     /* ----- RESET & BASE ----- */
     * {
@@ -17,7 +14,7 @@
     }
 
     body {
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-family: "JetBrains Mono", "IBM Plex Mono", "SF Mono", monospace;
       background: #0b0b0b;
       color: #e6e6e6;
       line-height: 1.5;
@@ -27,7 +24,7 @@
 
     /* ----- NAVIGATION ----- */
     .top-nav {
-      max-width: 1400px;  /* match container max-width for consistency */
+      max-width: 1400px;
       margin: 0 auto 2rem auto;
       padding: 1rem 0;
       display: flex;
@@ -55,8 +52,8 @@
 
     /* ----- GALLERY CONTAINER ----- */
     .gallery-container {
-      max-width: 1400px;      /* slightly narrower for more side space */
-      margin: 0 auto;         /* horizontally centered */
+      max-width: 1400px;
+      margin: 0 auto;
     }
 
     h1 {
@@ -255,7 +252,7 @@
     /* ----- RESPONSIVE BREAKPOINTS ----- */
     @media (min-width: 768px) {
       body {
-        padding: 1.5rem;       /* more side padding on tablets */
+        padding: 1.5rem;
       }
       .masonry-grid {
         column-count: 3;
@@ -269,7 +266,7 @@
 
     @media (min-width: 1200px) {
       body {
-        padding: 2rem;          /* even more side padding on large screens */
+        padding: 2rem;
       }
       .masonry-grid {
         column-count: 4;
@@ -317,7 +314,7 @@
   </nav>
 
   <div class="gallery-container">
-    <h1>Design & Graphic Work</h1>
+    <h1>Selected Design Works</h1>
 
     <div class="masonry-grid">
       <!-- Tile 1 -->
@@ -356,7 +353,7 @@
       <div class="design-tile" data-index="5">
         <img src="https://i.ibb.co/S7PQ2nPp/pogba.jpg" alt="Interface concept for sports app" loading="lazy">
         <div class="tile-overlay">
-          <div class="tile-label">storytelling sports poster</div>
+          <div class="tile-label">Storytelling Sports Poster</div>
         </div>
       </div>
 
@@ -381,7 +378,6 @@
   <!-- Footer -->
   <footer>
     <p>
-      
       <a href="https://linkedin.com/in/amritkprem" target="_blank">LinkedIn</a>
     </p>
     <p>© 2026 Amrit K Prem</p>
