@@ -21,9 +21,9 @@ body {
   background: var(--bg);
   color: var(--text);
   line-height: 1.6;
-  touch-action: pan-y pinch-zoom; /* Added: Controls touch zoom behavior */
-  max-width: 100%; /* Added: Prevents horizontal overflow */
-  overflow-x: hidden; /* Added: Hides any horizontal overflow */
+  touch-action: pan-y pinch-zoom;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 /* ---------------- NAV ---------------- */
@@ -59,14 +59,14 @@ body {
   max-width: 1000px;
   margin: auto;
   padding: 60px 20px;
-  width: 100%; /* Added: Ensures container doesn't exceed viewport */
+  width: 100%;
 }
 
 /* ---------------- HERO ---------------- */
 
 .hero {
   display: grid;
-  grid-template-columns: 7fr 7fr;
+  grid-template-columns: 1fr 1fr;  /* changed from 7fr 7fr for simplicity */
   align-items: center;
   gap: 24px;
   margin-bottom: 100px;
@@ -172,7 +172,7 @@ h2 {
 .projects {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 20px; /* This gives spacing between project cards */
+  gap: 20px;
 }
 
 .card,
@@ -297,27 +297,27 @@ footer a {
   line-height: 1.7;
 }
 
-/* ---------------- ADDED: Certificate and Skills Layout Spacing ---------------- */
+/* ---------------- CERTIFICATES & SKILLS LAYOUT ---------------- */
 
 .cert-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 20px; /* Added: Creates consistent spacing between certificate cards */
+  gap: 20px;
 }
 
 .skills-projects {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 20px; /* Added: Creates consistent spacing between skill/tool cards */
+  gap: 20px;
 }
 
 /* ---------------- MOBILE ---------------- */
 
 @media (max-width: 768px) {
   body {
-    touch-action: pan-y; /* Changed: Restricts to vertical panning only on mobile */
+    touch-action: pan-y;
   }
-  
+
   .hero {
     grid-template-columns: 1fr;
     gap: 40px;
@@ -339,12 +339,11 @@ footer a {
   .hero-left h1 {
     font-size: 2rem;
   }
-  
+
   .container {
-    padding: 40px 20px; /* Added: Slightly reduced padding on mobile */
+    padding: 40px 20px;
   }
-  
-  /* Added: Prevent horizontal scrolling on all elements */
+
   .top-nav,
   .hero,
   .projects,
@@ -366,13 +365,12 @@ footer a {
   .about-name {
     font-size: 1.8rem;
   }
-  
-  /* Added: Ensure content fits within viewport */
+
   .hero-left h1 {
     font-size: 1.8rem;
     word-wrap: break-word;
   }
-  
+
   .hero-sub,
   .card p,
   .cert-item p,
@@ -380,14 +378,3 @@ footer a {
     word-wrap: break-word;
   }
 }
-/* FORCE nav to behave the same everywhere */
-
-.top-nav {
-  width: 100%;
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 24px 20px;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between
