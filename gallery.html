@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gallery - Amrit K Prem</title>
+<meta name="description" content="Selected design work by Amrit K Prem.">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="favicon-96x96.png">
+<link rel="manifest" href="site.webmanifest">
+</head>
+<body>
+<div class="page">
+  <div class="wrap">
+    <header class="site-header">
+      <a class="identity" href="index.html" aria-label="Amrit K Prem home">
+        <img class="mark" src="portrait.png" alt="" aria-hidden="true">
+        <span class="name-block">
+          <span class="accent-line"></span>
+          <span class="name">Amrit.</span>
+          <span class="role">Cybersecurity / Systems / Design</span>
+        </span>
+      </a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html" aria-current="page">Gallery</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="gallery-head" aria-labelledby="gallery-title">
+        <div class="label">Gallery</div>
+        <div>
+          <h1 class="gallery-title" id="gallery-title">Selected design work.</h1>
+          <p class="intro">Posters, thumbnails, and visual experiments made with a simple, direct approach.</p>
+        </div>
+      </section>
+
+      <div class="gallery-grid" id="gallery-grid" aria-label="Design gallery">
+        <button class="gallery-tile" type="button" aria-label="Open Editorial Fan Art">
+          <img src="https://i.ibb.co/FqbL2pYp/garnacho.jpg" alt="Editorial fan art with bold typography" loading="lazy">
+          <span class="gallery-overlay"><span class="gallery-label">Editorial Fan Art</span></span>
+        </button>
+        <button class="gallery-tile" type="button" aria-label="Open Dramatic Composite Poster">
+          <img src="https://i.ibb.co/k6DHWZXW/openhimer.jpg" alt="Dramatic composite poster design" loading="lazy">
+          <span class="gallery-overlay"><span class="gallery-label">Dramatic Composite Poster</span></span>
+        </button>
+        <button class="gallery-tile" type="button" aria-label="Open Modern Sports Portrait Poster">
+          <img src="https://i.ibb.co/Z6RWdD2C/ronaldo.jpg" alt="Modern sports portrait poster" loading="lazy">
+          <span class="gallery-overlay"><span class="gallery-label">Modern Sports Portrait Poster</span></span>
+        </button>
+        <button class="gallery-tile" type="button" aria-label="Open Modern Minimal Typography">
+          <img src="https://i.ibb.co/nsTgNzys/2026.jpg" alt="Modern minimal typography poster" loading="lazy">
+          <span class="gallery-overlay"><span class="gallery-label">Modern Minimal Typography</span></span>
+        </button>
+        <button class="gallery-tile" type="button" aria-label="Open Storytelling Sports Poster">
+          <img src="https://i.ibb.co/S7PQ2nPp/pogba.jpg" alt="Storytelling sports poster" loading="lazy">
+          <span class="gallery-overlay"><span class="gallery-label">Storytelling Sports Poster</span></span>
+        </button>
+        <button class="gallery-tile" type="button" aria-label="Open Matchday Promo Poster">
+          <img src="https://i.ibb.co/fz3F9rf9/messi.jpg" alt="Matchday promo poster design" loading="lazy">
+          <span class="gallery-overlay"><span class="gallery-label">Matchday Promo Poster</span></span>
+        </button>
+      </div>
+    </main>
+
+    <footer>
+      <span>2026 Amrit K Prem</span>
+      <span><a href="index.html">Home</a> / <a href="about.html">About</a></span>
+    </footer>
+
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+      <button class="lightbox-close" id="lightbox-close" aria-label="Close preview">x</button>
+      <img id="lightbox-img" src="" alt="">
+      <div class="lightbox-caption" id="lightbox-caption"></div>
+    </div>
+  </div>
+</div>
+<script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+{
+  "projects": [
+    {
+      "id": "log-analyzer",
+      "title": "Suspicious Log Analyzer",
+      "description": "CLI-based tool that analyzes authentication logs to detect brute-force behavior and highlight weaknesses in access control.",
+      "tags": ["Python", "Security", "CLI"],
+      "link": "https://github.com/amrittkprem/log-analyzer",
+      "linkLabel": "View on GitHub"
+    },
+    {
+      "id": "cyber-platform",
+      "title": "Cybersecurity Learning Platform",
+      "description": "Early-stage educational platform focused on teaching cybersecurity concepts with practical explanations and structured content.",
+      "tags": ["Web", "EdTech"],
+      "link": null
+    },
+    {
+      "id": "design-work",
+      "title": "Graphic Design & Video Edits",
+      "description": "Posters, thumbnails, and short-form edits created using mobile-first workflows for real-world use.",
+      "tags": ["Design", "Editing"],
+      "link": "gallery.html",
+      "linkLabel": "View Gallery"
+    }
+  ],
+  "planned": [
+    {
+      "id": "attack-surface",
+      "title": "Attack Surface Change Detector",
+      "description": "Defensive security tool designed to track changes in exposed services over time and highlight risk increases caused by configuration drift.",
+      "tags": ["Architecture", "Risk", "Blue Team"],
+      "status": "Planned"
+    }
+  ],
+  "certifications": [
+    { "name": "Cybersecurity Fundamentals", "issuer": "IBM" },
+    { "name": "FCF: Introduction to the Threat Landscape 3.0", "issuer": "Fortinet" },
+    { "name": "Ethical Hacker Jr.", "issuer": "Red Team Hacker Academy" }
+  ],
+  "skills": [
+    "Kali Linux & CLI",
+    "Nmap",
+    "SQLMap",
+    "Network Attacks",
+    "Network Exposure",
+    "Wireshark"
+  ],
+  "gallery": [
+    {
+      "src": "https://i.ibb.co/FqbL2pYp/garnacho.jpg",
+      "alt": "Editorial fan art with bold typography",
+      "label": "Editorial Fan Art"
+    },
+    {
+      "src": "https://i.ibb.co/k6DHWZXW/openhimer.jpg",
+      "alt": "Dramatic composite poster design",
+      "label": "Dramatic Composite Poster"
+    },
+    {
+      "src": "https://i.ibb.co/Z6RWdD2C/ronaldo.jpg",
+      "alt": "Modern sports portrait poster",
+      "label": "Modern Sports Portrait Poster"
+    },
+    {
+      "src": "https://i.ibb.co/nsTgNzys/2026.jpg",
+      "alt": "Modern minimal typography poster",
+      "label": "Modern Minimal Typography"
+    },
+    {
+      "src": "https://i.ibb.co/S7PQ2nPp/pogba.jpg",
+      "alt": "Storytelling sports poster",
+      "label": "Storytelling Sports Poster"
+    },
+    {
+      "src": "https://i.ibb.co/fz3F9rf9/messi.jpg",
+      "alt": "Matchday promo poster design",
+      "label": "Matchday Promo Poster"
+    }
+  ]
+}
